@@ -1,0 +1,55 @@
+.header
+  padding: 0 1rem
+  height: 60px
+  justify-content: space-between
+  position: fixed
+  width: 1024px
+  z-index: 1
+  @include media('lg')
+    width: 100svw
+    max-width: 100svw
+  @include media('md')
+    height: 90px !important
+  &__container
+    display: flex
+    @include media('md')
+      height: fit-content
+      flex-direction: column
+  &__logo
+    margin-top: 3px
+    span:nth-child(1)
+      font-weight: 800
+      font-size: 36px
+      letter-spacing: -0.03em
+      font-family: 'Open Sans', sans-serif
+      font-stretch: condensed
+      color: var(--fontDarkColor)
+    span:nth-child(2)
+      font-size: 36px
+      letter-spacing: -0.03em
+      font-family: 'Open Sans', sans-serif
+      font-stretch: condensed
+      color: var(--fontDarkColor)
+      margin-left: -2px
+      font-weight: 600
+      padding-right: 23.5px
+  &__slogan
+    font-size: 18px
+    font-weight: 400
+    align-content: center
+    padding-top: 6px
+    font-family: 'Open Sans', sans-serif
+    font-stretch: condensed
+    color: var(--fontDarkColor)
+  &__fa-menu
+    height: 16px
+    
+    padding: 0 !important
+    border: none
+    background-color: transparent
+    div
+      background-color: #333333
+      height: 3px
+      width: 18px
+      will-change: transform
+      border-radius: 2px

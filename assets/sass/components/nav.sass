@@ -1,0 +1,39 @@
+.nav
+  padding: 0 1rem
+  position: relative
+  top: 60px
+  margin-bottom: 60px
+  height: 40px
+  display: flex
+  justify-content: space-between
+  @include media('md')
+    display: none !important
+  &__container
+    display: flex
+    justify-content: space-between
+    padding: 0
+    width: 375px
+    padding-top: 7px
+  &__elem
+    font-size: 18px
+    color: var(--fontDarkColor)
+    font-weight: 600
+    font-family: 'Open Sans', sans-serif
+    font-stretch: condensed  
+  &__tags
+    display: flex
+    padding-top: 2px
+    gap: 8px
+  &__tag
+    height: 30px
+    border-radius: 0.25rem
+    background-color: #B83534
+    
+    padding: 0 12px
+    display: flex
+    align-items: center
+    font-size: 17px
+    color: var(--fontLightColor)
+    font-weight: 600
+    font-family: 'Open Sans', sans-serif
+    font-stretch: condensed 

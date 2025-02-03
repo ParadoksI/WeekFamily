@@ -1,0 +1,22 @@
+.follow-links 
+  margin: 1.5rem 0
+  gap: 1.5rem
+  display: flex
+  flex-wrap: wrap
+  @include media('lg')
+    justify-content: center
+  a
+    display: block
+    padding: 0px 11px
+    border-radius: 0.5rem
+    font-size: 1rem
+    font-weight: 500
+    line-height: 37px
+    font-stretch: normal
+    color: var(--fontLightColor)
+    font-family: "Open Sans"
+    will-change: transform
+  &__button:first-child
+    margin-left: calc( 137px - 1rem )
+    @include media('lg')
+      margin-left: 0px

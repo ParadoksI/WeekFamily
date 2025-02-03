@@ -1,0 +1,55 @@
+.topic 
+  margin: -0.5rem auto 35px auto
+  width: 70.5%
+  
+  @include media('lg')
+    width: 100%
+  &__header
+    font-family: "Oswald"
+    font-size: 28px
+    font-weight: 500
+    line-height: 34px
+    padding-bottom: 6px
+    text-align: center
+    color: var(--fontDarkColor)
+    font-stretch: normal
+    letter-spacing: 0.5px
+  &__item
+    gap: 11px
+    @include media('sm')
+      flex-direction: column
+  &__container
+    gap: 16px
+    display: flex
+    flex-direction: column
+    margin: 18px 0 
+  &__subtitle
+    font-family: "Oswald"
+    font-size: 18px
+    font-weight: 400
+    line-height: 26.68px
+    text-align: left
+    color: var(--accentColor)
+    padding-top: 0.5rem
+  &__title
+    font-family: "Oswald"
+    font-size: 20px
+    font-weight: 500
+    line-height: 25px
+    text-align: left
+    color: var(--fontDarkColor)
+  &__figure
+    width: 178px
+    margin: 0
+    @include media('sm')
+      width: 100vw
+    img
+      width: 178px
+      @include media('sm')
+        width: 100%
+    
+  &__img
+    @include media('sm')
+      width: 100svw
+      position: relative
+      margin-left: -0.5rem

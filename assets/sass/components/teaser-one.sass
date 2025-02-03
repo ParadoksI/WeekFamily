@@ -1,0 +1,67 @@
+.teaser-one
+  padding-bottom: 1rem
+  margin-top: -9px
+  &__figure
+    position: relative
+    margin: 0
+  &__content
+    height: 202px
+    position: absolute
+    bottom: 0
+    width: 100%
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.7) 100%)
+    padding: 0 0 49px 44px
+    @include media('md')
+      position: unset
+      background: unset
+      padding: 0 0 0 0.5rem
+      height: unset
+  &__sub-title-wrapper
+    background-color: var(--accentColor)
+    width: 276px
+    height: 36px
+    display: flex
+    align-items: center
+    margin: 54px 1px 0 2px
+    @include media('md')
+      margin: 0
+      color: var(--accentColor)
+      background-color: unset
+      font-size: calc(1.0125rem + 0.15vw) !important
+      font-weight: 400
+      line-height: 28px
+      height: unset
+  &__sub-title
+    font-family: 'Oswald'
+    font-size: 20px
+    font-weight: 500
+    line-height: 25px
+    margin-left: 5px
+    color: var(--fontDarkColor)
+    @include media('md')
+      margin: 0
+      color: var(--accentColor)
+      background-color: unset
+      font-size: calc(1.0125rem + 0.15vw) !important
+      font-weight: 400
+      line-height: 28px
+      height: unset
+  &__title
+    font-family: 'Oswald'
+    font-size: 48px
+    font-weight: 500
+    line-height: 60px
+    color: var(--fontLightColor)
+    @include media('lg')
+      font-size: calc(1.2rem + 2.4vw)
+    @include media('md')
+      color: var(--fontDarkColor)
+      font-size: calc(1.075rem + 0.9vw)
+      line-height: 25px
+      font-weight: 500
+  &__img
+    @include media('md')
+      width: 100svw
+      left: -0.5rem
+      position: relative
+      

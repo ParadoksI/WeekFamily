@@ -1,0 +1,93 @@
+// 1️ Общие
+@import 'media'
+@import 'vendors/_font-face'
+@import 'variables'
+// Шрифты
+@import 'fonts/open_sans'
+@import 'fonts/oswald'
+// Компоненты
+@import 'components/header'
+@import 'components/nav'
+@import 'components/tags'
+@import 'components/follow-links'
+@import 'components/teaser'
+@import 'components/just-pic'
+@import 'components/headers'
+@import 'components/teaser-one'
+@import 'components/breadcrumbs'
+@import 'components/intro'
+@import 'components/article'
+@import 'components/topic'
+@import 'components/bonus'
+  
+
+.--d-flex
+  display: flex
+.--d-block
+  display: block
+.--align-items-center
+  align-items: center
+.--text-align-center
+  text-align: center
+.--border-top
+  border-top: 1px solid #989898
+.--border-bottom
+  border-bottom: 1px solid #989898
+.--border-top-mod
+  border-top: 1px solid #9d9d9d
+.--border-bottom-mod
+  border-bottom: 1px solid #9d9d9d
+.--bg-primary-subtle
+  background-color: var(--accentColor)
+.--justify-content-space-between
+  justify-content: space-between
+.--justify-content-center
+  justify-content: center
+.--flex-direction-column
+  flex-direction: column
+.--fw-wrap
+  flex-wrap: wrap
+.--fw-nowrap
+  flex-wrap: nowrap
+.--text-nowrap
+  text-wrap: nowrap
+
+
+
+.main-structure
+  font-size: 16px
+  background-color: rgba(var(--ms-body-bg-rgb),1)
+  a
+    text-decoration: none
+  li
+    list-style: none
+  #wrapper_content
+    max-width: 1024px
+    margin: auto
+  main
+    background-color: white
+    padding-bottom: 1rem
+    padding: 0 1rem
+    overflow: hidden
+    @include media('lg')
+      padding: 0 0.5rem
+    @include media('md')
+      padding-top: calc(2.7rem + 47px)
+      
+
+#category
+  .main-structure
+    .about
+      font-size: 16px
+      font-weight: 400
+      font-stretch: normal !important
+      font-family: 'Open Sans', sans-serif
+      font-stretch: condensed
+      line-height: 24px
+      padding-bottom: 1rem
+      margin-bottom: 45px
+      color: var(--fontDarkColor)
+    .teaser-three 
+      margin-bottom: 2rem
+      article 
+        width: calc((100% - 2rem) / 3)
