@@ -7,19 +7,32 @@
   display: flex
   justify-content: space-between
   @include media('md')
-    display: none !important
+    gap: 10px
+    top: 70px
+    padding: 0 10px
+    margin-bottom: 0px
   &__container
     display: flex
     justify-content: space-between
     padding: 0
     width: 375px
     padding-top: 7px
+    @include media('md')
+      overflow-x: scroll
+      text-wrap: nowrap
+      gap: 16px
+      z-index: 9
+      &::-webkit-scrollbar 
+        display: none
+
   &__elem
     font-size: 18px
     color: var(--fontDarkColor)
     font-weight: 600
     font-family: 'Open Sans', sans-serif
     font-stretch: condensed  
+    &:hover 
+      text-decoration: underline
   &__tags
     display: flex
     padding-top: 2px
@@ -27,8 +40,8 @@
   &__tag
     height: 30px
     border-radius: 0.25rem
-    background-color: #B83534
-    
+    background-color: var(--accentColor-mod)
+    text-wrap: nowrap
     padding: 0 12px
     display: flex
     align-items: center

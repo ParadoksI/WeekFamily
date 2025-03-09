@@ -1,5 +1,8 @@
 .header-2
-  margin: 43px 0 16px 0
+  margin: 16px 0 16px 0
+  
+  @include media('md')
+    padding: 71px 0px 0px 0px
   &__item
     font-family: Oswald
     font-size: 48px
@@ -20,7 +23,12 @@
     text-align: center
     @include media('xl')
       font-size: calc(1.075rem + .9vw) !important
+    @include media('md')
+      font-size: 28px !important
 .header-4
+  margin-top: 40px
+  &-mod 
+    margin-top: 24px
   &__item
     font-family: 'Oswald'
     font-stretch: normal
@@ -30,4 +38,6 @@
     line-height: 40px
     text-align: center
     @include media('xl')
-      font-size: calc(1.075rem + .9vw) !important
+      font-size: 28px !important
+    @include media('md')
+      font-size: 28px !important

@@ -19,6 +19,8 @@
 @import 'components/article'
 @import 'components/topic'
 @import 'components/bonus'
+@import 'components/add-todo'
+@import 'components/links'
   
 
 .--d-flex
@@ -66,17 +68,21 @@
     margin: auto
   main
     background-color: white
-    padding-bottom: 1rem
-    padding: 0 1rem
+    padding-bottom: 2rem
+    padding: 0 1rem 2rem 1rem
     overflow: hidden
-    @include media('lg')
-      padding: 0 0.5rem
+    
     @include media('md')
       padding-top: calc(2.7rem + 47px)
+      padding: 0 10px 2rem 10px
       
 
 #category
   .main-structure
+    main
+      @include media('md')
+        padding-top: calc(2.7rem + 47px)
+        padding: 0 10px 2rem 10px
     .about
       font-size: 16px
       font-weight: 400
@@ -91,3 +97,4 @@
       margin-bottom: 2rem
       article 
         width: calc((100% - 2rem) / 3)
+    

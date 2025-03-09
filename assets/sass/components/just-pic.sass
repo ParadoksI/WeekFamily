@@ -1,10 +1,56 @@
 .just-pic
   padding-top: 1rem
-  padding-bottom: 51px
+  margin-bottom: 15px
+  position: relative
+  @include media('md')
+    margin-top:86px
+    padding-top: 0px
   &__figure
     margin: 0
   &__img
     @include media('md')
       width: 100svw
-      left: -0.5rem
+      left: -10px
       position: relative 
+  &-content
+    display: flex
+    flex-direction: column
+    position: absolute
+    bottom: 0px
+    height: 202px
+    width: 100%
+    background: linear-gradient(to top, var(--grad-begin), var(--grad-end))
+    padding: 0px 20px 0px 60px
+    justify-content: center
+    left: 0px
+    @include media('md')
+      position: static
+      height: auto
+      background: transparent
+      padding: 0
+
+  &-title
+    padding: 5px
+    background: var(--accentColor)
+    font-family: "Oswald"
+    font-weight: 500
+    width: max-content
+    font-size: 20px
+    line-height: 25px
+    color: var(--fontDarkColor)
+    @include media('md')
+      padding: 4px 0px 0px 0px
+      background: transparent 
+      color: var(--accentColor-mod)
+      font-size: 18px
+  &-disc
+    font-size: 48px
+    color: var(--fontLightColor)
+    font-weight: 500
+    font-family: "Oswald"
+    line-height: 71px
+    @include media('md')
+      font-size: 24px
+      color: var(--fontDarkColor)
+      line-height: 30px
+      padding-bottom: 17px

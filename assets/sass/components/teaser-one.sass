@@ -1,6 +1,8 @@
 .teaser-one
   padding-bottom: 1rem
   margin-top: -9px
+  @include media('md')
+    padding-bottom: 2rem
   &__figure
     position: relative
     margin: 0
@@ -14,7 +16,7 @@
     @include media('md')
       position: unset
       background: unset
-      padding: 0 0 0 0.5rem
+      padding: 0 0 0 0rem
       height: unset
   &__sub-title-wrapper
     background-color: var(--accentColor)
@@ -40,7 +42,7 @@
     color: var(--fontDarkColor)
     @include media('md')
       margin: 0
-      color: var(--accentColor)
+      color: var(--accentColor-mod)
       background-color: unset
       font-size: calc(1.0125rem + 0.15vw) !important
       font-weight: 400
@@ -62,6 +64,6 @@
   &__img
     @include media('md')
       width: 100svw
-      left: -0.5rem
+      left: -10px
       position: relative
       

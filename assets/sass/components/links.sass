@@ -1,0 +1,32 @@
+.links
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 22px 26px
+    padding: 23px 0px 0px 0px
+    @include media('md')
+        display: flex
+        flex-direction: column
+        gap: 22px
+    &__item:nth-child(n+4)
+        @include media('md')
+            display: none
+    &__item
+        display: flex
+        flex-direction: column
+        
+        &-title 
+            font-family: "Oswald"
+            font-size: 18px
+            font-weight: 400
+            color: var(--accentColor-mod)
+            transition: color ease 0.3s
+        &-disc 
+            font-family: "Oswald"
+            font-size: 20px
+            font-weight: 500
+            line-height: 25px
+            color: var(--fontDarkColor)
+            @include media('md')
+                font-size: 24px
+                
+

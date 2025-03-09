@@ -1,10 +1,15 @@
 .follow-links 
   margin: 1.5rem 0
-  gap: 1.5rem
+  gap: 1rem 1.5rem
   display: flex
-  flex-wrap: wrap
-  @include media('lg')
-    justify-content: center
+ 
+  justify-content: center
+  @include media('add3')
+    justify-content: start
+
+    overflow-x: scroll
+  &::-webkit-scrollbar 
+    display: none  
   a
     display: block
     padding: 0px 11px
@@ -16,7 +21,4 @@
     color: var(--fontLightColor)
     font-family: "Open Sans"
     will-change: transform
-  &__button:first-child
-    margin-left: calc( 137px - 1rem )
-    @include media('lg')
-      margin-left: 0px
+  
